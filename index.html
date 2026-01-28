@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Tiya ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#fff0f6,#f3d9fa);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+}
+
+/* floating hearts */
+.hearts span{
+    position:absolute;
+    bottom:-20px;
+    font-size:22px;
+    animation:float 8s linear infinite;
+    opacity:.7;
+}
+
+@keyframes float{
+    from{transform:translateY(0);}
+    to{transform:translateY(-110vh); opacity:0;}
+}
+
+.card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(14px);
+    padding:45px;
+    border-radius:30px;
+    max-width:460px;
+    text-align:center;
+    box-shadow:0 25px 50px rgba(0,0,0,.2);
+    animation:fade 1.6s ease;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1;}
+}
+
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:38px;
+    color:#ff4d6d;
+}
+
+.sub{
+    margin:10px 0 25px;
+    font-size:16px;
+    color:#6a0572;
+}
+
+.heart{
+    font-size:65px;
+    color:#ff4d6d;
+    animation:pulse 1.2s infinite;
+    margin-bottom:20px;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.18);}
+    100%{transform:scale(1);}
+}
+
+.message{
+    font-size:16px;
+    line-height:1.9;
+    color:#3a0f2e;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:22px;
+}
+
+.buttons a{
+    text-decoration:none;
+    padding:14px 34px;
+    border-radius:35px;
+    font-size:18px;
+    color:white;
+    background:linear-gradient(45deg,#ff4d6d,#c77dff);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.buttons a::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.35);
+    transition:.4s;
+}
+
+.buttons a:hover::before{
+    left:0;
+}
+
+.buttons a:hover{
+    transform:translateY(-5px) scale(1.08);
+    box-shadow:0 15px 30px rgba(255,77,109,.6);
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <span style="left:10%">❤️</span>
+    <span style="left:25%">💗</span>
+    <span style="left:45%">💖</span>
+    <span style="left:65%">❤️</span>
+    <span style="left:85%">💗</span>
+</div>
+
+<div class="card">
+    <div class="heart">❤️</div>
+
+    <h1>Tiya</h1>
+    <div class="sub">Someone has something special to ask you…</div>
+
+    <p class="message">
+        From the smallest smiles to the biggest moments,  
+        every second with you feels magical.  
+        You make my ordinary days beautiful,  
+        and my heart feels at home with you.
+        <br><br>
+        So today, with all my love and courage,  
+        I just want to ask one simple question…
+    </p>
+
+    <h2 style="color:#ff4d6d; margin-bottom:30px;">
+        Will you be my Valentine?
+    </h2>
+
+    <div class="buttons">
+        <a href="gallery.html">Yes 💕</a>
+        <a href="gallery.html">YES 😍</a>
+    </div>
+</div>
+
+</body>
+</html>
